@@ -270,6 +270,78 @@ tr:nth-child(even){background:#f8fafc}
 .btn-green{background:linear-gradient(135deg,var(--green),#059669)}
 .btn-orange{background:linear-gradient(135deg,var(--orange),#ea580c)}
 
+.btn-youtube{
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+
+.btn-geogebra{
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+
+.btn-desmos{
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.btn-symbolab{
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+/* =========================
+   BOTONES PERSONALIZADOS
+========================= */
+
+.btn-youtube{
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+
+.btn-youtube:hover{
+  box-shadow: 0 12px 25px rgba(255, 0, 0, 0.35);
+}
+
+.btn-geogebra{
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+
+.btn-geogebra:hover{
+  box-shadow: 0 12px 25px rgba(0, 180, 216, 0.35);
+}
+
+.btn-desmos{
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.btn-desmos:hover{
+  box-shadow: 0 12px 25px rgba(16, 185, 129, 0.35);
+}
+
+.btn-symbolab{
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+.btn-symbolab:hover{
+  box-shadow: 0 12px 25px rgba(124, 58, 237, 0.35);
+}
+
+/* =========================
+   TARJETAS PERSONALIZADAS
+========================= */
+
+.card-youtube{
+  border-top: 6px solid #ff0000;
+}
+
+.card-geogebra{
+  border-top: 6px solid #00b4d8;
+}
+
+.card-desmos{
+  border-top: 6px solid #10b981;
+}
+
+.card-symbolab{
+  border-top: 6px solid #7c3aed;
+}
+
 .video-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));

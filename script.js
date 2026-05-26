@@ -97,3 +97,31 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+
+/* =========================
+   Mini quizzes múltiples
+========================= */
+
+function checkQuiz(button, isCorrect, feedbackId, message) {
+  const quizBox = button.closest(".quiz-box");
+  const feedback = document.getElementById(feedbackId);
+  const options = quizBox.querySelectorAll(".option");
+
+  options.forEach(option => {
+    option.style.background = "white";
+    option.style.color = "#1f2937";
+  });
+
+  if (isCorrect) {
+    button.style.background = "#dcfce7";
+    button.style.color = "#166534";
+    feedback.style.color = "#15803d";
+  } else {
+    button.style.background = "#fee2e2";
+    button.style.color = "#991b1b";
+    feedback.style.color = "#b91c1c";
+  }
+
+  feedback.textContent = message;
+}
