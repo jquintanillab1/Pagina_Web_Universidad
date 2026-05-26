@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Videos Explicativos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="badge">Proyecto final</span>
+    <h1>Mis Videos Explicativos</h1>
+    <p>Sección para agregar y previsualizar videos propios.</p>
+  </div>
+</header>
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html">Inicio</a>
+    <a href="concepto.html">Concepto</a>
+    <a href="subtemas.html">Subtemas</a>
+    <a href="informacion.html">Información</a>
+    <a href="ejemplos.html">Ejemplos</a>
+    <a href="ejercicio.html">Ejercicio</a>
+    <a href="problemas.html">Problemas</a>
+    <a href="recursos.html">Recursos</a>
+    <a class="active" href="mis-videos.html">Mis videos</a>
+  </div>
+</nav>
+
+
+<main class="container">
+
+<section class="page-card">
+  <h2>8. Mis videos explicativos</h2>
+  <p>
+    En esta sección puedes seleccionar un video desde tu computadora para previsualizarlo.
+    Esto sirve para mostrar tus propias explicaciones antes de subirlas definitivamente al proyecto.
+  </p>
+
+  <div class="upload-box">
+    <h3>Subir video local</h3>
+    <p>
+      Selecciona un archivo de video en formato MP4, WebM u otro compatible con el navegador.
+      El video se mostrará únicamente en tu computadora mientras estás viendo la página.
+    </p>
+
+    <input type="file" accept="video/*" onchange="previewVideo(event)">
+    <p id="fileName"></p>
+
+    <div id="videoPreview" class="video-preview">
+      <video id="localVideo" controls></video>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p>
+      Importante: en GitHub Pages no se pueden guardar archivos enviados por usuarios directamente.
+      Para publicar tus videos, debes subirlos a una carpeta del proyecto o a una plataforma como YouTube
+      y luego enlazarlos en esta página.
+    </p>
+  </div>
+
+  <h3>Espacio para videos publicados</h3>
+  <div class="video-grid">
+    <article class="video-card">
+      <div class="video-thumb">🎥</div>
+      <div class="video-card-content">
+        <h3>Mi explicación 1</h3>
+        <p>Aquí puedes colocar el enlace de tu primer video explicativo.</p>
+        <a href="#" class="btn">Agregar enlace</a>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <div class="video-thumb">🎬</div>
+      <div class="video-card-content">
+        <h3>Mi explicación 2</h3>
+        <p>Aquí puedes colocar otro video sobre ejercicios de funciones.</p>
+        <a href="#" class="btn">Agregar enlace</a>
+      </div>
+    </article>
+  </div>
+
+  <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 - José Roberto Quintanilla Barrios | Carné 9989-24-2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Funciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="badge">Proyecto final</span>
+    <h1>Ejemplos de Funciones</h1>
+    <p>Ejercicios resueltos paso a paso.</p>
+  </div>
+</header>
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html">Inicio</a>
+    <a href="concepto.html">Concepto</a>
+    <a href="subtemas.html">Subtemas</a>
+    <a href="informacion.html">Información</a>
+    <a class="active" href="ejemplos.html">Ejemplos</a>
+    <a href="ejercicio.html">Ejercicio</a>
+    <a href="problemas.html">Problemas</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="mis-videos.html">Mis videos</a>
+  </div>
+</nav>
+
+
+<main class="container">
+
+<section class="page-card">
+  <h2>4. Ejemplos</h2>
+
+  <div class="example-box">
+    <h3>Ejemplo 1</h3>
+    <p>Función:</p>
+    <div class="formula">f(x) = 2x + 3</div>
+    <p>Evaluar cuando x = 4:</p>
+    <p>f(4) = 2(4) + 3</p>
+    <p>f(4) = 8 + 3</p>
+    <div class="formula">f(4) = 11</div>
+  </div>
+
+  <div class="example-box">
+    <h3>Ejemplo 2</h3>
+    <p>Función:</p>
+    <div class="formula">g(x) = x² - 5</div>
+    <p>Evaluar cuando x = 3:</p>
+    <p>g(3) = 3² - 5</p>
+    <p>g(3) = 9 - 5</p>
+    <div class="formula">g(3) = 4</div>
+  </div>
+
+  <div class="quiz-box">
+    <h3>Mini quiz interactivo</h3>
+    <p>Si f(x) = 2x + 3, ¿cuánto vale f(4)?</p>
+    <button class="option" onclick="checkAnswer(this, false)">A) 9</button>
+    <button class="option" onclick="checkAnswer(this, true)">B) 11</button>
+    <button class="option" onclick="checkAnswer(this, false)">C) 14</button>
+    <button class="option" onclick="checkAnswer(this, false)">D) 8</button>
+    <p id="feedback" class="feedback"></p>
+  </div>
+
+  <a href="ejercicio.html" class="btn">Siguiente</a>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 - José Roberto Quintanilla Barrios | Carné 9989-24-2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
