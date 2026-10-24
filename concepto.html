@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newton-Raphson | Concepto</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="hero"><div class="hero-content"><span class="badge">Cálculo II · Proyecto Final de Curso</span>
+<h1>Concepto de Newton-Raphson</h1><p>La idea matemática y geométrica detrás de la búsqueda de raíces.</p></div></header>
+<nav class="navbar"><div class="nav-container"><a class="" href="index.html">Inicio</a><a class="active" href="concepto.html">Concepto</a><a class="" href="subtemas.html">Subtemas</a><a class="" href="informacion.html">Teoría</a><a class="" href="ejemplos.html">Ejemplos</a><a class="" href="ejercicio.html">Práctica</a><a class="" href="problemas.html">Problemas</a><a class="" href="recursos.html">Recursos</a><a class="" href="manual.html">Manual</a><a class="" href="mis-videos.html">Mis videos</a></div></nav>
+<main class="container"><section class="page-card">
+<h2>1. Concepto y definición</h2>
+<p>El <strong>método de Newton-Raphson</strong> es un procedimiento iterativo para aproximar una solución de la ecuación <strong>f(x)=0</strong>. En lugar de buscar directamente una solución exacta, parte de un valor inicial y lo va corrigiendo mediante la pendiente de la función.</p>
+<h3>¿Qué significa encontrar una raíz?</h3>
+<p>Una raíz es un valor de x para el cual la función vale cero. Gráficamente, corresponde a un punto donde la curva cruza o toca el eje x.</p>
+<div class="formula">f(x) = 0 &nbsp; → &nbsp; x = raíz</div>
+<h3>La idea geométrica</h3>
+<p>Desde una aproximación <strong>xₙ</strong>, se traza la recta tangente a la curva. Donde esa tangente corta al eje x se obtiene una nueva aproximación, <strong>xₙ₊₁</strong>. El proceso se repite hasta alcanzar la precisión deseada.</p>
+<div class="highlight"><strong>En palabras simples:</strong> Newton-Raphson mira dónde está la función, mira qué tan inclinada está en ese punto y usa esa información para acercarse rápidamente a la raíz.</div>
+<h3>Fórmula principal</h3>
+<div class="formula">x<sub>n+1</sub> = x<sub>n</sub> − f(x<sub>n</sub>) / f′(x<sub>n</sub>)<small>f′(x) representa la primera derivada de la función.</small></div>
+<h3>¿Qué necesita el método?</h3>
+<ol><li>Una función f(x).</li><li>Su primera derivada f′(x).</li><li>Un valor inicial x₀.</li><li>Un criterio para detener las iteraciones.</li></ol>
+<div class="warning"><strong>Importante:</strong> si f′(xₙ)=0, la fórmula no puede calcular la siguiente iteración. Además, una elección poco adecuada de x₀ puede provocar divergencia o una convergencia hacia una raíz diferente.</div>
+</section></main>
+<footer><p>&copy; 2026 - José Roberto Quintanilla Barrios | Carné 9989-24-2026</p></footer>
+<script src="script.js"></script></body></html>
